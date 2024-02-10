@@ -1,5 +1,5 @@
 [Project]
-FileName=creation.dev
+FileName=Addto.dev
 Name=Project1
 Type=1
 Ver=2
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=0000000000000000001000000
-UnitCount=1
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -39,19 +39,39 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=1.0.0.0
+FileVersion=
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=1.0.0.0
+ProductVersion=
 AutoIncBuildNr=0
 SyncProduct=1
 
+[Unit2]
+FileName=header.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
 [Unit1]
-FileName=sllmain.c
+FileName=main.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=methods.c
 CompileCpp=0
 Folder=
 Compile=1
