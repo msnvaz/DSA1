@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "header.h"
-
-Node* createNode(int data){
-	struct Node *head;
-	head->data=data;
-	head->next=NULL;
+struct Node* createNode(int data){
+	struct Node* newnode = (struct Node*)malloc(sizeof(struct Node));
+	newnode->data=data;
+	newnode->next=NULL;
+	return *newnode;
 };
 
-void insertAtBeginning(Node** headRef, int data);
-void insertAtEnd(Node** headRef, int data);
-void deleteNode(Node** headRef, int data);
-void printLinkedList(Node* head);
+void insertAtBeginning(struct Node** headRef, int data){
+	struct Node* newnode =(struct Node*)malloc(sizeof(struct Node)) ;
+	
+}
+
+void insertAtEnd(struct Node** headRef, int data);
+void deleteNode(struct Node** headRef, int data);
+void printLinkedList(struct Node* head);
 
