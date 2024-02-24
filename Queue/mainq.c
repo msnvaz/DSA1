@@ -8,6 +8,8 @@ int front = -1;
 int rear = -1;
 
 void enqueue(int x);
+void dequeue(int x);
+void displayQueue();
 
 
 int main(int argc, char *argv[]) {
@@ -27,3 +29,34 @@ void enqueue(int x){
 		queue[rear]=x;
 	}
 }
+
+void dequeue(){
+	// empty queue
+	if(front==-1 && rear==-1){
+		printf("Underflow\n");
+	}
+	// only one element
+	else if(front==rear){
+		printf("Dequeued element: %d\n", queue[front]);
+		front=rear=-1;
+	}
+	else{
+		printf("Dequeued element: %d\n", queue[front]);
+		front++;
+	}
+}
+
+
+void displayQueue() {
+	int i;
+    if (front == -1 && rear == -1) {
+        printf("Queue is empty\n");
+    } else {
+        printf("Queue elements: ");
+        for (i = front; i <= rear; i++) {
+            printf("%d ", queue[i]);
+        }
+        printf("\n");
+    }
+}
+
